@@ -19,8 +19,8 @@ You can either choose at least 2 scripts or 1 of the others (Report, Slides)
 Jobs: 
 
 - Programming
-    - main.py           - MEGAMATT
-    - dataParser.py     - MEGAMATT
+    - main.py           - megamatt
+    - dataParser.py     - megamatt
     - calc.py           - AVAILABLE
     - plot.py           - AVAILABLE
 - Report                - AVAILABLE
