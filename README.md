@@ -6,6 +6,9 @@ https://docs.google.com/document/d/1TMQYjm8qyqWl-3bqV1vshAbsQURNaL1XW20OVmxHv2A/
 Slides:\
 https://docs.google.com/presentation/d/1stVkarDaRnrTj-Ph7oubEzb4fOavtcjXfHMWrGF8TBE/edit?usp=sharing
 
+Here's the data we're using: (You don't need to download, the program will automatically do that)\
+https://catalog.data.gov/dataset/united-states-covid-19-cases-and-deaths-by-state-over-time
+
 Here's a tutorial for using github with vscode:\
 https://www.youtube.com/watch?v=lYiE5lBS13E
 
