@@ -3,6 +3,7 @@ from calc import calc
 from plot import plot
 
 import sys
+import os
 
 args = settings()
 doFetch = False
@@ -25,7 +26,7 @@ for i in range(len(sys.argv) - 1):
                     params.append(sys.argv[i + 2 + j])
                     j += 1
     if(arg == '-h' or arg == '--help'):
-        print('HELP TEXT HERE')
+        print(open(os.path.join(os.path.dirname(__file__), '../doc/program_usage.txt'), 'r').read())
         exit(0)
     if((arg == '-d' or arg == '--database') and params != None):
         args.database = params[0]

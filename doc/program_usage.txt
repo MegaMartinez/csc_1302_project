@@ -1,0 +1,7 @@
+command: python3 src/main.py [args]
+Arguments:
+-h, --help          List usage and Arguments
+-d, --database      Set the database to fetch from manually
+-o, --operations    Set the operations to do on the data manually
+-n, --noplot        Omit plotting stage, just calculate the data
+-u, --update        Force program to redownload the csv file from database
