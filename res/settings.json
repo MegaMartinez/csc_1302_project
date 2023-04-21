@@ -1,0 +1,17 @@
+{
+    "database": "https://data.cdc.gov/api/views/9mfq-cb36/rows.csv?accessType=DOWNLOAD",
+    "operations": [
+        "mean",
+        "median",
+        "var",
+        "std"
+    ],
+    "enabledPlots": {
+        "main": [
+
+        ],
+        "bonus": [
+            
+        ]
+    }
+}
