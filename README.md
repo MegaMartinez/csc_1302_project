@@ -21,7 +21,7 @@ Jobs:
 - Programming
     - main.py           - megamatt
     - dataParser.py     - megamatt
-    - calc.py           - AVAILABLE
-    - plot.py           - AVAILABLE
+    - calc.py           - gabe.
+    - plot.py           - gabe.
 - Report                - AVAILABLE
 - Slides                - AVAILABLE
