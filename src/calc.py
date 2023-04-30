@@ -15,7 +15,7 @@ def calc(data: pd.DataFrame, settings: settings) -> list[list[pd.DataFrame]]:
         df1 = df1.round(2)
         df1.Name = f'{state} calculated'
         output[1].append(df1)
-        df2: pd.DataFrame = data.loc[data['state'] == state]
+        df2: pd.DataFrame = data.loc[data['state'] == state].reset_index(drop=True)
         df2.sort_values(by=['submission_date'])
         df2.Name = f'{state} over time'
         output[0].append(df2)
