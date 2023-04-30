@@ -6,8 +6,7 @@ def calc(data: pd.DataFrame, settings: settings) -> list[list[pd.DataFrame]]:
     stateGroup = data.groupby('state')
     calcs = stateGroup.aggregate({'new_case':settings.operations, 'new_death':settings.operations})
     data['submission_date'] = pd.to_datetime(data['submission_date'], format='%m/%d/%Y')
-    data.sort_values(by='submission_date', inplace=True)
-    data.reset_index(drop=True)
+    data = data.sort_values(by='submission_date').reset_index(drop=True)
     for state in data['state'].unique():
         df_dict = {}
         for op in settings.operations:
@@ -20,4 +19,5 @@ def calc(data: pd.DataFrame, settings: settings) -> list[list[pd.DataFrame]]:
         df2.sort_values(by=['submission_date'])
         df2.Name = f'{state} over time'
         output[0].append(df2)
+
     return output
