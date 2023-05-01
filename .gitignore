@@ -1,5 +1,5 @@
 *.csv
-out/*.png
+out/*.*
 res/localData.json
 
 ## Ignore Visual Studio temporary files, build results, and
