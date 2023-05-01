@@ -6,12 +6,5 @@
         "var",
         "std"
     ],
-    "enabledPlots": {
-        "main": [
-
-        ],
-        "bonus": [
-            
-        ]
-    }
+    "enabledPlots": true
 }

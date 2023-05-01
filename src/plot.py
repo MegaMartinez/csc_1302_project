@@ -4,17 +4,7 @@ import matplotlib.axes as axes # type: ignore
 import pandas as pd # type: ignore
 import numpy as np # type: ignore
 
-# INPUT: 
-# - An array of an array of dataframes computed in calc.py, be sure to plot them according to settings.
-# - The first array is an array of dataframes for each state over time. This will be plotted on a line graph.
-# - The second array is an array of calculated dataframes for each state. This will be plotted in a pie chart.
-# - The settings taken from settings.json
-# OUTPUT: None
-
-# First chart: line graph with 10 highest total cases states. The x axis is time, the y axis is the new cases at that time
-# Second chart: same as chart 1 but for deaths instead of cases
-# third chart: pie chart for mean with mean for all 60 states. If that's too cluttered we can group the last 50 into "other"
-# fourth chart: histogram with total cases and deaths for the top 10 states and others
+import random
 
 def plot(data: list[list[pd.DataFrame]], settings: settings) -> None:
     plt1: axes._axes.Axes
@@ -55,10 +45,11 @@ def plot(data: list[list[pd.DataFrame]], settings: settings) -> None:
     # Plot 3
 
     def label(pct):
-        return np.round(pct, 2)
+        return f'{np.round(pct, 2)} %'
 
     plt3.pie(top10[1].to_list(), labels=top10[0].to_list(), autopct=lambda pct: label(pct))
     plt3.set_title('Average New Case Per Day (10 Highest)')
+    plt3.legend(['{0} - {1:1.2f}'.format(i,j) for i,j in zip(top10[0].to_list(), top10[1].to_list())], loc='lower left', bbox_to_anchor=(-0.5, 0))
 
     # Plot 4
 
@@ -83,6 +74,7 @@ def plot(data: list[list[pd.DataFrame]], settings: settings) -> None:
         print('----------------------------------------------')
         print(data[1][i])
 
-    plt.show()
+    if(settings.enabledPlots):
+        plt.show()
 
     return

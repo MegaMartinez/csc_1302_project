@@ -33,7 +33,7 @@ for i in range(len(sys.argv) - 1):
     if((arg == '-o' or arg == '--operations') and params != None):
         args.operations = params
     if(arg == '-n' or arg == '--noplot'):
-        args.enabledPlots = None
+        args.enabledPlots = False
     if(arg == '-u' or arg == '--update'):
         doFetch = True
 
