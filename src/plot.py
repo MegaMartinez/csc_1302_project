@@ -77,6 +77,12 @@ def plot(data: list[list[pd.DataFrame]], settings: settings) -> None:
     plt4.hist(histData, len(data[0]), ec='k')
     plt4.set_title('Total Deaths per State (30 Highest)')
 
+    for i in range(len(data[1])):
+        print('----------------------------------------------')
+        print('\t\t' + data[1][i].Name.split(' ')[0])
+        print('----------------------------------------------')
+        print(data[1][i])
+
     plt.show()
-    
+
     return
