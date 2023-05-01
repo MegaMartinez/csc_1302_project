@@ -1,7 +1,7 @@
 # csc_1302_project
 
 Report:\
-https://docs.google.com/document/d/1TMQYjm8qyqWl-3bqV1vshAbsQURNaL1XW20OVmxHv2A/edit?usp=sharing
+https://docs.google.com/document/d/1T5eYfGRaK5tnIYFiDV-y1atky1m0EWHFm7PBS4BzaaQ/edit?usp=sharing
 
 Slides:\
 https://docs.google.com/presentation/d/1stVkarDaRnrTj-Ph7oubEzb4fOavtcjXfHMWrGF8TBE/edit?usp=sharing
@@ -24,4 +24,4 @@ Jobs:
     - calc.py           - gabe.
     - plot.py           - gabe.
 - Report                - yungmisfit
-- Slides                - yungmisfit
+- Slides                - AVAILABLE
