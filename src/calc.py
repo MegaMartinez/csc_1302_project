@@ -20,4 +20,9 @@ def calc(data: pd.DataFrame, settings: settings) -> list[list[pd.DataFrame]]:
         df2.Name = f'{state} over time'
         output[0].append(df2)
 
+    print('----------------------------------------------')
+    print('\t\t' + 'Nationwide')
+    print('----------------------------------------------')
+    print(data.aggregate({'new_case':settings.operations, 'new_death':settings.operations}).round(2))
+
     return output
