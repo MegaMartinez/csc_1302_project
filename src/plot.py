@@ -4,8 +4,6 @@ import matplotlib.axes as axes # type: ignore
 import pandas as pd # type: ignore
 import numpy as np # type: ignore
 
-import random
-
 def plot(data: list[list[pd.DataFrame]], settings: settings) -> None:
     plt1: axes._axes.Axes
     plt2: axes._axes.Axes
