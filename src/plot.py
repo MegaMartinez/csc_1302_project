@@ -17,8 +17,6 @@ import numpy as np # type: ignore
 # fourth chart: histogram with total cases and deaths for the top 10 states and others
 
 def plot(data: list[list[pd.DataFrame]], settings: settings) -> None:
-    # Your code here
-
     plt1: axes._axes.Axes
     plt2: axes._axes.Axes
     plt3: axes._axes.Axes
