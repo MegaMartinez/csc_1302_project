@@ -23,5 +23,5 @@ Jobs:
     - dataParser.py     - megamatt
     - calc.py           - gabe.
     - plot.py           - gabe.
-- Report                - AVAILABLE
-- Slides                - AVAILABLE
+- Report                - yungmisfit
+- Slides                - yungmisfit
